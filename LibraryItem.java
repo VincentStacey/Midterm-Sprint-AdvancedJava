@@ -15,12 +15,11 @@ abstract class LibraryItem {
         this.numberOfCopies = numberOfCopies;
     }
 
-    // Common methods like getters, setters, display item info
     public abstract void displayInfo();
 }
 
 class Book extends LibraryItem {
-    private String format; // printed, electronic, audio
+    private String format; 
 
     public Book(String id, String title, Author author, String isbn, String publisher, int numberOfCopies,
             String format) {
@@ -35,7 +34,7 @@ class Book extends LibraryItem {
 }
 
 class Periodical extends LibraryItem {
-    private String type; // printed, electronic
+    private String type; 
 
     public Periodical(String id, String title, Author author, String isbn, String publisher, int numberOfCopies,
             String type) {

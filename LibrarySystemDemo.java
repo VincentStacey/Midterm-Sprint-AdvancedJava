@@ -6,7 +6,6 @@ public class LibrarySystemDemo {
         Library library = new Library();
         Scanner scanner = new Scanner(System.in);
 
-        // Example setup
         Author author1 = new Author("J.K. Rowling", "31 July 1965");
         Book book1 = new Book("1", "Harry Potter", author1, "123456789", "Bloomsbury", 5, "Printed");
         author1.addItem(book1);
@@ -55,7 +54,6 @@ public class LibrarySystemDemo {
         }
     }
 
-    // Method to add a new library item
     private static void addLibraryItem(Scanner scanner, Library library) {
         System.out.println("Add New Library Item:");
 
@@ -82,7 +80,7 @@ public class LibrarySystemDemo {
 
         System.out.print("Enter Number of Copies: ");
         int copies = scanner.nextInt();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         System.out.print("Enter Item Type (e.g., Printed, E-book, etc.): ");
         String itemType = scanner.nextLine();
@@ -95,7 +93,6 @@ public class LibrarySystemDemo {
         System.out.println("New library item added: " + title);
     }
 
-    // Method to add a new author
     private static void addAuthor(Scanner scanner, Library library) {
         System.out.println("Add New Author:");
 

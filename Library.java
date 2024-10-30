@@ -23,7 +23,6 @@ class Library {
         patrons.add(patron);
     }
 
-    // Search by title, author, ISBN
     public LibraryItem searchItem(String query) {
         for (LibraryItem item : items) {
             if (item.title.equalsIgnoreCase(query) || item.author.getName().equalsIgnoreCase(query)
